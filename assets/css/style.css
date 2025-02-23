@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif !important;
+  background-color: rgb(9, 9, 9) !important;
+}
+
+/* light theme styles */
+.lighttext {
+  color: #cdcdcd !important;
+}
+
+.primarybg {
+  background-color: rgb(255, 128, 0) !important;
+}
+
+.primarytext {
+  color: rgb(255, 128, 0) !important;
+}
+
+.secondarybg {
+  background-color: #000000 !important;
+}
+
+.secondarytext {
+  color: #000000 !important;
+}
+
+.darkbg {
+  background-color: rgb(39, 39, 39);
+}
+
+.gradient-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #d27e00, #ffed4d);
+  background-size: 200% 200%;
+  animation: gradientFlash 2s infinite alternate;
+  transition: transform 0.2s ease-in-out;
+  border: none;
+}
+
+@keyframes gradientFlash {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.primary-btn {
+  background-color: rgb(255, 128, 0);
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffffff !important;
+  transition: 0.4s all;
+  display: inline-block;
+}
+.primary-btn:hover {
+  background-color: #000000;
+}
+
+.secondary-btn {
+  background-color: #000000;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffffff !important;
+  transition: 0.4s all;
+}
+.secondary-btn:hover {
+  background-color: rgb(255, 128, 0);
+}
+
+.shadow {
+  box-shadow: 0px 2px 10px #d8d8d8 !important;
+}
+
+.xsmall {
+  font-size: 0.8rem;
+}
+
+.herosec .hero-banner {
+  background: linear-gradient(to right, rgb(72, 166, 0), rgb(0, 96, 255), rgb(255, 165, 0), rgb(255, 235, 0));
+  background-size: 600%;
+  background-position: 0 0;
+  animation: gradients 15s ease infinite;
+}
+@keyframes gradients {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 50% 0;
+  }
+  50% {
+    background-position: 90% 0;
+  }
+  60% {
+    background-position: 60%;
+  }
+  75% {
+    background-position: 40%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.herosec header .navbar .nav-link {
+  color: #ffffff !important;
+  padding: 7px 15px;
+  transition: 0.4s all;
+  font-size: 0.9rem;
+}
+.herosec header .navbar .nav-link:hover {
+  color: rgb(255, 128, 0) !important;
+}
+.herosec header .navbar .active {
+  background-color: rgb(255, 128, 0);
+  border-radius: 8px;
+  color: #ffffff !important;
+}
+.herosec header .navbar .active:hover {
+  color: #ffffff !important;
+}
+.herosec .swiper-slide {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.herosec .swiper-slide img {
+  width: 100%;
+}
+.herosec .swiper-slide .iphone {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.about .abt-box {
+  position: relative;
+  width: 85%;
+  margin: 0 auto;
+}
+.about .abt-box .stepbox {
+  height: 200px;
+  text-align: center;
+}
+.about .abt-box .stepbox .icon {
+  margin-top: 25px;
+  font-size: 3rem;
+  color: rgb(92, 0, 55);
+}
+.about .abt-box .stepbox .icon2 {
+  margin-top: 25px;
+  font-size: 3rem;
+  color: rgb(12, 0, 148);
+}
+.about .abt-box .stepbox .icon3 {
+  margin-top: 25px;
+  font-size: 3rem;
+  color: rgb(4, 112, 0);
+}
+.about .abt-box span {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  color: #ffffff;
+  text-align: center;
+  padding: 8px 0px;
+  border-radius: 20px 0px 20px 0px;
+}
+.about .box1 {
+  background: linear-gradient(to bottom, rgb(255, 0, 153), rgb(92, 0, 55));
+}
+.about .box1 span {
+  background: linear-gradient(to bottom, rgb(255, 0, 153), rgb(92, 0, 55));
+}
+.about .box2 {
+  background: linear-gradient(to bottom, rgb(76, 60, 255), rgb(12, 0, 148));
+}
+.about .box2 span {
+  background: linear-gradient(to bottom, rgb(76, 60, 255), rgb(12, 0, 148));
+}
+.about .box3 {
+  background: linear-gradient(to bottom, rgb(9, 255, 0), rgb(4, 112, 0));
+}
+.about .box3 span {
+  background: linear-gradient(to bottom, rgb(9, 255, 0), rgb(4, 112, 0));
+}
+
+.client .img-box {
+  overflow: hidden;
+}
+.client .img-box img {
+  width: 100%;
+}
+.client ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.reward-item {
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.reward-item:hover {
+  transform: scale(1.1);
+}
+.reward-item img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.reward-item .tag {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #ffffff;
+  border-radius: 100px;
+}
+
+.reward-description {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.myTestmonials .swiper-slide {
+  background-color: rgb(39, 39, 39);
+}
+
+footer .links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.4s all;
+}
+footer .links a:hover {
+  color: rgb(255, 128, 0);
+}
+footer .media a {
+  background-color: #000000;
+  color: rgb(255, 128, 0);
+  padding: 6px 0px;
+  text-align: center;
+  width: 40px;
+  font-size: 18px;
+  display: inline-block;
+  border-radius: 50px;
+  margin: 10px 5px;
+  transition: 0.3s all;
+}
+footer .media a:hover {
+  background-color: rgb(255, 128, 0);
+  color: #000000;
+}/*# sourceMappingURL=style.css.map */
