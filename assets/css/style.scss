@@ -137,7 +137,7 @@ body{
     header{
         .navbar{
             .nav-link{
-                color: #ffffff !important;
+                color: $secondary !important;
                 padding: 7px 15px;    
                 
                 transition: $transition;

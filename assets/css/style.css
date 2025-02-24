@@ -139,7 +139,7 @@ body {
   }
 }
 .herosec header .navbar .nav-link {
-  color: #ffffff !important;
+  color: #000000 !important;
   padding: 7px 15px;
   transition: 0.4s all;
   font-size: 0.9rem;
