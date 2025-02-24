@@ -288,4 +288,9 @@ footer .media a {
 footer .media a:hover {
   background-color: rgb(255, 128, 0);
   color: #000000;
+}
+
+.form .form-control {
+  background-color: rgb(9, 9, 9);
+  border: none;
 }/*# sourceMappingURL=style.css.map */
