@@ -156,15 +156,14 @@ body {
   color: #ffffff !important;
 }
 .herosec .swiper-slide {
-  border-radius: 20px;
   overflow: hidden;
 }
 .herosec .swiper-slide img {
-  width: 100%;
-}
-.herosec .swiper-slide .iphone {
-  width: 350px;
-  margin: 0 auto;
+  height: 500px;
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
 }
 
 .about .abt-box {
@@ -266,7 +265,7 @@ body {
 }
 
 footer .links a {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   transition: 0.4s all;
 }
@@ -293,4 +292,23 @@ footer .media a:hover {
 .form .form-control {
   background-color: rgb(9, 9, 9);
   border: none;
+}
+
+@media (max-width: 450px) {
+  .herosec .swiper-slide {
+    margin-bottom: 20px;
+  }
+  .herosec .swiper-slide img {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (min-width: 455px) and (min-width: 768px) {
+  .herosec .swiper-slide {
+    margin-bottom: 20px;
+  }
+  .herosec .swiper-slide img {
+    width: 100%;
+    height: 500px;
+  }
 }/*# sourceMappingURL=style.css.map */
