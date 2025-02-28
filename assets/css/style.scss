@@ -115,6 +115,7 @@ body{
   }
   .herosec{
     .hero-banner {
+      position: relative;
       background: linear-gradient(to right,
           rgb(72, 166, 0),  /* Green */
           rgb(0, 96, 255),  /* Blue */
@@ -124,6 +125,8 @@ body{
       background-size: 600%;
   background-position: 0 0;
 	animation: gradients 15s ease infinite;
+
+
   }
   
   @keyframes gradients {
@@ -137,7 +140,7 @@ body{
     header{
         .navbar{
             .nav-link{
-                color: $secondary !important;
+                color: #ffffff !important;
                 padding: 7px 15px;    
                 
                 transition: $transition;
@@ -174,58 +177,42 @@ body{
   .about{
     .abt-box{
       position: relative;
-      width: 85%;
+      // width: 85%;
       margin: 0 auto;
       .stepbox{
-        height: 200px;
         text-align: center;
+        background-color: #272727;
+        p{
+          font-weight: 600;
+          color: #ffffff;
+        }
 .icon{
-  margin-top: 25px;
   font-size: 3rem;
-  color: rgb(92, 0, 55);
+  color: #ffed4d,;
 }
 .icon2{
-  margin-top: 25px;
   font-size: 3rem;
-  color: rgb(12, 0, 148);
+  color: rgb(76, 60, 255);
 }
 .icon3{
-  margin-top: 25px;
   font-size: 3rem;
-  color: rgb(4, 112, 0);
+  color: rgb(9, 255, 0);
 }
       }
-      span{
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 200px;
-        color: #ffffff;
-        text-align: center;
-        padding: 8px 0px;
-        border-radius: 20px 0px 20px 0px;
-      }
+      
     }
+  
     .box1{
-      background: linear-gradient(to bottom, rgb(255, 0, 153), rgb(92, 0, 55));
-      span{
-        background: linear-gradient(to bottom, rgb(255, 0, 153), rgb(92, 0, 55));
-      }
+      background: linear-gradient(to bottom, #ffed4d, #d27e00);
+      
     }
     .box2{
       background: linear-gradient(to bottom, rgb(76, 60, 255), rgb(12, 0, 148));
-      span{
-        background: linear-gradient(to bottom, rgb(76, 60, 255), rgb(12, 0, 148));
-
-      }
+      
     }
     .box3{
       background: linear-gradient(to bottom, rgb(9, 255, 0), rgb(4, 112, 0));
-      span{
-        background: linear-gradient(to bottom, rgb(9, 255, 0), rgb(4, 112, 0));
-
-      }
+      
     }
   }
   .client{
@@ -306,6 +293,112 @@ footer{
       }
   }
   }
+}
+.area{
+  .circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    i{
+      opacity: 0.6;
+    }
+    li{
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      background: rgba(255, 255, 255, 0.2);
+      animation: animate 25s linear infinite;
+      bottom: -150px;
+      &:nth-child(1){
+        left: 25%;
+        width: 80px;
+        height: 80px;
+        animation-delay: 0s;
+    }
+    &:nth-child(2){
+      left: 10%;
+      width: 20px;
+      height: 20px;
+      animation-delay: 2s;
+      animation-duration: 12s;
+  }
+  &:nth-child(3){
+    left: 70%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 4s;
+}
+&:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+&:nth-child(5){
+left: 65%;
+width: 20px;
+height: 20px;
+animation-delay: 0s;
+}
+&:nth-child(6){
+left: 75%;
+width: 100px;
+height: 100px;
+animation-delay: 3s;
+}
+&:nth-child(7){
+left: 35%;
+width: 120px;
+height: 120px;
+animation-delay: 7s;
+}
+&:nth-child(8){
+left: 50%;
+width: 25px;
+height: 25px;
+animation-delay: 15s;
+animation-duration: 45s;
+}
+&:nth-child(9){
+left: 20%;
+width: 40px;
+height: 40px;
+animation-delay: 2s;
+animation-duration: 35s;
+}
+&:nth-child(10){
+left: 85%;
+width: 110px;
+height: 110px;
+animation-delay: 0s;
+animation-duration: 11s;
+}
+  }
+}
+  
+ 
+}
+
+@keyframes animate {
+
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+
 }
 .form{
   .form-control{
