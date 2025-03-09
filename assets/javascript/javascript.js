@@ -76,3 +76,15 @@ document.addEventListener("DOMContentLoaded", function() {
       updateCountdown();
 
 
+
+      function showButton(element) {
+        element.style.display = "none"; // Hide <p> tag
+        element.nextElementSibling.classList.remove("d-none"); // Show button
+    }
+    
+    function hideButton(button) {
+        button.classList.add("d-none"); // Hide button
+        button.previousElementSibling.style.display = "block"; // Show <p> tag again
+    }
+
+

@@ -74,15 +74,18 @@
                 
                 <div class="swiper-wrapper">
                   <div class="swiper-slide position-relative">
+                    <button class="primary-btn">Claim</button>
                     <img src="./assets/images/frame1.png" alt="" />
                     <i class="fa-solid fa-gift position-absolute top-50 start-50 translate-middle display-1" style="color: rgba(255, 123, 0, 0.594);"></i>
                   </div>
                   <div class="swiper-slide">
+                    <button class="primary-btn">Claim</button>
                     <img src="./assets/images/frame2.png" alt="" />
                     <i class="fa-solid fa-gift position-absolute top-50 start-50 translate-middle display-1" style="color: rgba(255, 123, 0, 0.594);"></i>
                     
                   </div>
                   <div class="swiper-slide text-center">
+                    <button class="primary-btn">Claim</button>
                     <img src="./assets/images/frame3.png" alt="" />
                     <i class="fa-solid fa-gift position-absolute top-50 start-50 translate-middle display-1" style="color: rgba(255, 123, 0, 0.594);"></i>
                     
@@ -123,7 +126,7 @@
           <div class="col mb-4">
             <div class="abt-box box1 p-2 rounded-3" data-aos="fade-up">
               <div class="stepbox p-3 rounded-3">
-                <i class="fa-solid fa-coins icon" data-aos="zoom-in"></i>
+                <img src="./assets/images/coin.gif" class="bg-white rounded-circle p-3" width="100px" data-aos="zoom-in" alt="">
                 <p class="mb-0 mt-3">Financial Guidance</p>
               </div>
             </div>
@@ -131,7 +134,7 @@
           <div class="col mb-4">
             <div class="abt-box box2 p-2 rounded-3" data-aos="fade-down">
               <div class="stepbox p-3 rounded-3">
-                <i class="fa-solid fa-scale-balanced icon2" data-aos="zoom-in"></i>
+                <img src="./assets/images/scale.gif" class="bg-white rounded-circle p-3" width="100px" data-aos="zoom-in" alt="">
                 <p class="mb-0 mt-3">Legal Expertise</p>
               </div>
             </div>
@@ -139,7 +142,7 @@
           <div class="col mb-4">
             <div class="abt-box box3 p-2 rounded-3" data-aos="fade-up">
               <div class="stepbox  p-3 rounded-3">
-                <i class="fa-solid fa-gem icon3" data-aos="zoom-in"></i>
+                <img src="./assets/images/premium.gif" class="bg-white rounded-circle p-3" width="100px" data-aos="zoom-in" alt="">
                 <p class="mb-0 mt-3">Premium Products</p>
               </div>
             </div>
@@ -181,21 +184,36 @@
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 align-items-center mt-5">
       <div class="col mb-4">
         <div class="reward-item over position-relative" data-aos="fade-up" data-description="A rugged, stylish fatbike for adventure lovers.">
-          <p class="tag p-2 px-3 primarytext">Free <i class="fa-solid fa-gift "></i></p>
-          <img src="./assets/images/fatbike.jpg" alt="Fatbike">
+          <div class="tag d-flex align-items-center">
+            <p class="mb-0 p-2 px-3 primarytext" onclick="showButton(this)">
+                Free <i class="fa-solid fa-gift"></i>
+            </p>
+            <button class="primary-btn border-0 small py-2 d-none" onclick="hideButton(this)">Claim</button>
+        </div>
+          <img src="./assets/images/bike.png" alt="Fatbike">
           <h5 class="mt-3 text-white">A rugged, stylish fatbike.</h5>
       </div>
       </div>
       <div class="col mb-4">
         <div class="reward-item over position-relative" data-aos="fade-up" data-description="The latest iPhone 16/15 with top-tier features and performance.">
-          <p class="tag p-2 px-3 primarytext">Free <i class="fa-solid fa-gift "></i></p>
+          <div class="tag d-flex align-items-center">
+            <p class="mb-0 p-2 px-3 primarytext" onclick="showButton(this)">
+                Free <i class="fa-solid fa-gift"></i>
+            </p>
+            <button class="primary-btn border-0 small py-2 d-none" onclick="hideButton(this)">Claim</button>
+        </div>
           <img src="./assets/images/iphone-gift.jpg" alt="iPhone 16/15">
           <h5 class="mt-3 text-white">iPhone 16/15</h5>
       </div>
       </div>
       <div class="col mb-4">
         <div class="reward-item over position-relative" data-aos="fade-up" data-description="A professionally designed custom website for your business or personal brand.">
-          <p class="tag p-2 px-3 primarytext">Free <i class="fa-solid fa-gift "></i></p>
+          <div class="tag d-flex align-items-center">
+            <p class="mb-0 p-2 px-3 primarytext" onclick="showButton(this)">
+                Free <i class="fa-solid fa-gift"></i>
+            </p>
+            <button class="primary-btn border-0 small py-2 d-none" onclick="hideButton(this)">Claim</button>
+        </div>
           <img src="./assets/images/website.webp" alt="Custom Website">
           <h5 class="mt-3 text-white">Custom Website</h5>
       </div>

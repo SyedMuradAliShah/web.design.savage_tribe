@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -158,6 +158,12 @@ body {
 }
 .herosec .swiper-slide {
   overflow: hidden;
+  position: relative;
+}
+.herosec .swiper-slide button {
+  position: absolute;
+  top: 5%;
+  left: 5%;
 }
 .herosec .swiper-slide img {
   height: 500px;
@@ -179,26 +185,14 @@ body {
   font-weight: 600;
   color: #ffffff;
 }
-.about .abt-box .stepbox .icon {
-  font-size: 3rem;
-  color: #ffed4d;
-}
-.about .abt-box .stepbox .icon2 {
-  font-size: 3rem;
-  color: rgb(76, 60, 255);
-}
-.about .abt-box .stepbox .icon3 {
-  font-size: 3rem;
-  color: rgb(9, 255, 0);
-}
 .about .box1 {
   background: linear-gradient(to bottom, #ffed4d, #d27e00);
 }
 .about .box2 {
-  background: linear-gradient(to bottom, rgb(76, 60, 255), rgb(12, 0, 148));
+  background: linear-gradient(to bottom, rgb(97, 118, 127), rgb(255, 168, 37));
 }
 .about .box3 {
-  background: linear-gradient(to bottom, rgb(9, 255, 0), rgb(4, 112, 0));
+  background: linear-gradient(to bottom, rgb(76, 60, 255), rgb(12, 0, 148));
 }
 
 .client .img-box {
@@ -231,6 +225,8 @@ body {
   position: absolute;
   top: 20px;
   left: 20px;
+}
+.reward-item .tag p {
   background-color: #ffffff;
   border-radius: 100px;
 }
@@ -243,6 +239,10 @@ body {
 
 .myTestmonials .swiper-slide {
   background-color: rgb(39, 39, 39);
+}
+.myTestmonials .swiper-slide p {
+  font-family: "Newsreader", serif !important;
+  font-size: 1.1rem;
 }
 
 footer .links a {
